@@ -1,0 +1,29 @@
+{
+    "name": "learn",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "description": "Help to learn any words and phrase",
+    "icons": {
+        "128": "logo/logo128.png",
+        "48": "logo/logo64.png",
+        "16": "logo/logo128.png"
+    },
+    "browser_action": {
+        "default_icon": "logo/logo28.png",
+        "default_popup": "index.html"
+    },
+
+    "options_page": "options.html",
+
+    "background": {
+        "scripts":["eventPage.js"],
+        "persistent": false
+    },
+
+    "permissions": [
+        "storage",
+        "contextMenus",
+        "notifications",
+        "storage"
+    ]
+}
